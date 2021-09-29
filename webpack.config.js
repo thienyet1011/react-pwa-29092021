@@ -71,7 +71,7 @@ if (!isDev) {
 }
 
 module.exports = {
-  devtool: isDev ? "inline-source-map" : "source-map",
+  devtool: isDev ? "source-map" : false,
   context: __dirname,
   entry: "./src/index.js",
   output: {
@@ -96,7 +96,7 @@ module.exports = {
     rules: [
       {
         // babel-loader responsible for loading JavaScript files:
-        test: /\.(js|jsx|ts|tsx)$/,
+        test: /\.js$/,
         use: {
           loader: "babel-loader",
           options: {
@@ -157,7 +157,7 @@ module.exports = {
   },
   plugins: webpackPlugins,
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    extensions: [".js"],
     alias: {},
   },
   optimization: {
