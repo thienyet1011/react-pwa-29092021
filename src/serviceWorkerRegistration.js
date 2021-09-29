@@ -5,6 +5,7 @@ export default function registerServiceWorker() {
         return;
     }
 
+    // Check that service workers are supported
     if ( 'serviceWorker' in navigator) {
         const wb = new Workbox("sw.js");
 

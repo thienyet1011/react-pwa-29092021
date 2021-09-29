@@ -1,9 +1,10 @@
 import React from "react";
-import Home from "./pages/home";
 import { Router } from "@reach/router";
 
-import "./styles/style.css";
+import Home from "./pages/home";
 import TopPicks from "./pages/top-picks";
+
+import "./styles/style.css";
 
 const App = () => {
     return (
