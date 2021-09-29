@@ -4,8 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -66,7 +65,6 @@ if (!isDev) {
       swSrc: "./src/src-sw.js",
       swDest: "sw.js",
     }),
-    new BundleAnalyzerPlugin(),
   ];
 }
 
