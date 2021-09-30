@@ -29,6 +29,7 @@ let webpackPlugins = [
       { from: "./src/manifest.json", to: "" },
       { from: "./src/logo192.png", to: "" },
       { from: "./src/logo512.png", to: "" },
+      { from: "./src/bg.png", to: "" },
     ],
   }),
 ];
