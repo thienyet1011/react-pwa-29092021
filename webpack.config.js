@@ -26,6 +26,10 @@ let webpackPlugins = [
   new CopyPlugin({
     patterns: [
       { from: "./src/favicon.ico", to: "" },
+      { from: "./src/favicon_32x32.png", to: "" },
+      { from: "./src/favicon_48x48.png", to: "" },
+      { from: "./src/favicon_96x96.png", to: "" },
+      { from: "./src/favicon_144x144.png", to: "" },
       { from: "./src/manifest.json", to: "" },
       { from: "./src/logo192.png", to: "" },
       { from: "./src/logo512.png", to: "" },
